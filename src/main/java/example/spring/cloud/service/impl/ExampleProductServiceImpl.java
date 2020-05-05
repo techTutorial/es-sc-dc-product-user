@@ -31,8 +31,8 @@ public class ExampleProductServiceImpl implements ExampleProductService {
 	}
 
 	@Override
-	public ExampleProductDto getProduct(int prodId) {
-		return null;
+	public ExampleProductDto getProduct(int pId) {
+		return examProdList.stream().filter(p -> p.getProductId().equals(pId)).findFirst().get();
 	}
 
 }

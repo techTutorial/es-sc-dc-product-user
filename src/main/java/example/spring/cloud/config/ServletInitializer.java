@@ -5,7 +5,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 import example.spring.cloud.ProductUserDcApp;
 
-public class ServletInitializer extends SpringBootServletInitializer {
+/*public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
@@ -13,3 +13,4 @@ public class ServletInitializer extends SpringBootServletInitializer {
 	}
 
 }
+*/
