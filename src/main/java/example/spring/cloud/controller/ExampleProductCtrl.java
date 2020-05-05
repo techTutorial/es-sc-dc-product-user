@@ -22,11 +22,13 @@ public class ExampleProductCtrl {
 	@Autowired
 	ExampleProductReactService prodReactService;
 
+	// http://localhost:5151/example/product
 	@GetMapping(value = "/product")
 	public List<ExampleProductDto> getProducts() {
 		return prodService.getProducts();
 	}
 
+	// http://localhost:5151/example/product/1
 	@GetMapping(value = "/product/{prodId}")
 	public ExampleProductDto getProduct(@PathVariable(name = "prodId") int id) {
 		return prodService.getProduct(id);
