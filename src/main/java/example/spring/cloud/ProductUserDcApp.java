@@ -8,8 +8,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
 @EnableEurekaClient
+@EnableSwagger2
 public class ProductUserDcApp {
 
 	public static void main(String[] args) {
